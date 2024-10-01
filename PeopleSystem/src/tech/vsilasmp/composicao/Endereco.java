@@ -1,4 +1,4 @@
-package tech.vsilasmp.Composicao;
+package tech.vsilasmp.composicao;
 
 import java.util.Scanner;
 
@@ -60,6 +60,7 @@ public class Endereco {
     }
 
     public void cadastrar() {
+        System.out.println("Informe o endereço! ");
         System.out.println("Informe a rua: ");
         this.rua = leitor.nextLine();
         System.out.println("Informe o numero: ");

@@ -1,17 +1,17 @@
-package tech.vsilasmp.Composicao;
+package tech.vsilasmp.composicao;
 
 import java.util.Scanner;
 
 public class Telefone {
-    private String DDD;
+    private int DDD;
     private String numero;
     private Scanner leitor = new Scanner(System.in);
 
-    public String getDDD() {
+    public int getDDD() {
         return DDD;
     }
 
-    public void setDDD(String DDD) {
+    public void setDDD(int DDD) {
         this.DDD = DDD;
     }
 
@@ -25,7 +25,8 @@ public class Telefone {
 
     public void cadastrar() {
         System.out.println("Informe o DDD: ");
-        this.DDD = leitor.nextLine();
+        this.DDD = leitor.nextInt();
+        leitor.nextLine();
         System.out.println("Informe o numero: ");
         this.numero = leitor.nextLine();
     }
