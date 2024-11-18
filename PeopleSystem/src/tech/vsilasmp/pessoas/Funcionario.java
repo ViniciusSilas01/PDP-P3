@@ -1,6 +1,6 @@
 package tech.vsilasmp.pessoas;
 
-import tech.vsilasmp.composicao.Cargo;
+import tech.vsilasmp.classesaux.Cargo;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;

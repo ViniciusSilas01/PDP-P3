@@ -1,4 +1,4 @@
-package tech.vsilasmp.composicao;
+package tech.vsilasmp.classesaux;
 
 public enum Cargo {
     ZELADOR,

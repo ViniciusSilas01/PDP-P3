@@ -1,6 +1,6 @@
 package tech.vsilasmp.pessoas;
 
-import tech.vsilasmp.composicao.Profissao;
+import tech.vsilasmp.classesaux.Profissao;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -32,7 +32,7 @@ public class Cliente extends Pessoa {
         System.out.println("Informe o código do cliente: ");
         this.codigo = leitor.nextLine();
         System.out.println("Informe a profissão do cliente: ");
-        Profissao profissao = Profissao.valueOf(leitor.nextLine().toUpperCase());
+        Profissao profissao = Profissao.valueOf(leitor.nextLine());
         if(profissao == Profissao.OUTROS){
             System.out.println(("Informe sua profissão: "));
             this.tipoProfissaoOutros = leitor.nextLine();

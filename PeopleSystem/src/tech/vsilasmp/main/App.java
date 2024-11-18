@@ -2,7 +2,6 @@ package tech.vsilasmp.main;
 
 import tech.vsilasmp.pessoas.Cliente;
 import tech.vsilasmp.pessoas.Funcionario;
-import tech.vsilasmp.pessoas.Pessoa;
 
 import java.util.Scanner;
 
@@ -57,7 +56,7 @@ public class App {
     }
 
     public static void saiuMesmo() {
-            System.out.println("Saiu mesmo!");
+            System.out.println("Saiu!");
     }
 }
 

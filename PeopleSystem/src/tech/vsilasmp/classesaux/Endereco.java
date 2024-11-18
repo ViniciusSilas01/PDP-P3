@@ -1,8 +1,10 @@
-package tech.vsilasmp.composicao;
+package tech.vsilasmp.classesaux;
+
+import tech.vsilasmp.interfaces.Cadastramento;
 
 import java.util.Scanner;
 
-public class Endereco {
+public class Endereco implements Cadastramento {
     private String rua;
     private String numero;
     private String cep;
@@ -63,7 +65,7 @@ public class Endereco {
         System.out.println("Informe o endereço! ");
         System.out.println("Informe a rua: ");
         this.rua = leitor.nextLine();
-        System.out.println("Informe o numero: ");
+        System.out.println("Informe o número: ");
         this.numero = leitor.nextLine();
         System.out.println("Informe o CEP: ");
         this.cep = leitor.nextLine();
@@ -71,7 +73,7 @@ public class Endereco {
         this.cidade = leitor.nextLine();
         System.out.println("Informe o estado: ");
         this.estado = leitor.nextLine();
-        System.out.println("Informe o Pais: ");
+        System.out.println("Informe o País: ");
         this.pais = leitor.nextLine();
     }
 }
